@@ -1,49 +1,47 @@
-import React from 'react'
+import React from 'react';
 import web from '/public/web.png';
 import library from '/public/library.png';
 import programming from '/public/programming.png';
 
-function Skills() {
+export default function Skills() {
   return (
-    <>
-    <h1 className='flex justify-center items-center text-5xl font-serif '>SKILLS</h1>
-      <section id='skills' class="text-gray-600 body-font">
-  <div class="container px-5 py-24 mx-auto">
-    <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
-      <div class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
-        <img src="web.png" alt="" />
-      </div>
-      <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-        <h2 class="text-gray-900 text-lg title-font font-medium mb-2">HTML, CSS, JS</h2>
-        <p class="leading-relaxed text-base">Ability to build interactive web pages using structured HTML, styled layout with CSS, and dynamic behavior using JavaScript.</p>
-        
-      </div>
-    </div>
-    <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
-      <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-        <h2 class="text-gray-900 text-lg title-font font-medium mb-2">REACT JS</h2>
-        <p class="leading-relaxed text-base">Skilled at creating component-based, interactive user interfaces using JSX, state, props, hooks, and routing.</p>
-       
-      </div>
-      <div class="sm:w-32 sm:order-none order-first sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
-        <img src="library.png" alt="" />
-      </div>
-    </div>
-    <div class="flex items-center lg:w-3/5 mx-auto sm:flex-row flex-col">
-      <div class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
-       <img src="programming.png" alt="" />
-      </div>
-      <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-        <h2 class="text-gray-900 text-lg title-font font-medium mb-2">C, C++, JAVA</h2>
-        <p class="leading-relaxed text-base">Introductory grasp of procedural and object‑oriented programming; able to write simple programs using C, C++, and Java.</p>
-        
-      </div>
-    </div>
-    
-  </div>
-</section>
-    </>
-  )
-}
+    <section id="skills" className="py-16  text-gray-800">
+      <h2 className=" text-5xl font-semibold text-center mb-12 text-blue-900">SKILLS</h2>
 
-export default Skills
+      <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
+        {/* Skill 1 */}
+        <div className="group bg-gray-50 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 flex flex-col items-center text-center">
+          <div className="w-24 h-24 flex items-center justify-center mb-4">
+            <img src={web} alt="HTML, CSS, JS" className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300" />
+          </div>
+          <h3 className="text-xl font-medium text-blue-900 mb-2 group-hover:text-blue-700 transition-colors duration-300">HTML, CSS, JS</h3>
+          <p className="text-gray-600 group-hover:text-gray-700 transition-colors duration-300">
+            Build interactive web pages with structured HTML, styled layout, and dynamic JavaScript behavior.
+          </p>
+        </div>
+
+        {/* Skill 2 */}
+        <div className="group bg-gray-50 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 flex flex-col items-center text-center">
+          <div className="w-24 h-24 flex items-center justify-center mb-4">
+            <img src={library} alt="REACT JS" className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300" />
+          </div>
+          <h3 className="text-xl font-medium text-blue-900 mb-2 group-hover:text-blue-700 transition-colors duration-300">REACT JS</h3>
+          <p className="text-gray-600 group-hover:text-gray-700 transition-colors duration-300">
+            Skilled at component-driven UIs, managing state, props, hooks, and routing using React.
+          </p>
+        </div>
+
+        {/* Skill 3 */}
+        <div className="group bg-gray-50 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 flex flex-col items-center text-center">
+          <div className="w-24 h-24 flex items-center justify-center mb-4">
+            <img src={programming} alt="C, C++, JAVA" className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300" />
+          </div>
+          <h3 className="text-xl font-medium text-blue-900 mb-2 group-hover:text-blue-700 transition-colors duration-300">C, C++, JAVA</h3>
+          <p className="text-gray-600 group-hover:text-gray-700 transition-colors duration-300">
+            Introductory grasp of procedural & object‑oriented programming in C, C++, and Java.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+}

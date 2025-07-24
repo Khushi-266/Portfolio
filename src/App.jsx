@@ -5,16 +5,18 @@ import Projects from './components/Projects'
 import Skills from './components/Skills'
 import Learning from './components/Learning'
 import Footer from './components/Footer'
+import Contact from './components/Contact'
 
 function App() {
   return (
     <>
     <Navbar/>
     <Hero/>
-    <br /><br />
+    
     <Skills/>
     <Learning/>
     <Projects/>
+    <Contact/>
     <Footer/>
     </>
   )

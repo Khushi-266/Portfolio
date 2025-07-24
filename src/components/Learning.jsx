@@ -1,44 +1,41 @@
-import React from 'react'
+import React from 'react';
 
-function Learning() {
+export default function Learning() {
   return (
-    <>
-    
-    <h1 className='flex justify-center items-center text-5xl font-serif'>FAMILIAR WITH</h1>
-    <section id='learnings' class="text-gray-600 body-font">
-  <div class="container px-5 py-24 mx-auto">
-    
-    <div class="flex flex-wrap ">
-      <div class= " hover:scale-105 xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
-        <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">MongoDB</h2>
-        
-      </div>
-      <div class=" hover:scale-105 xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
-        <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">NextJS</h2>
-       
-      </div>
-      <div class=" hover:scale-105 xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
-        <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Linux</h2>
-        
-      </div>
-      <div class=" hover:scale-105 xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
-        <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">NodeJS</h2>
-        
-      </div>
-      <div class=" hover:scale-105 xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
-        <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Express</h2>
-        
-      </div>
-      <div class=" hover:scale-105 xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
-        <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">MySqL</h2>
-        
-      </div>
-    </div>
-    
-  </div>
-</section>
-    </>
-  )
-}
+    <section id="learnings" className="py-16  text-gray-800">
+      <h1 className="text-5xl font-serif text-center text-blue-900 mb-12">FAMILIAR WITH</h1>
 
-export default Learning
+      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
+        <div className="group relative flex flex-col items-center justify-center p-6 border-2 border-gray-200 rounded-xl hover:scale-105 transition-all duration-300 ease-in-out">
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-indigo-600 opacity-0 group-hover:opacity-30 rounded-xl transition-opacity duration-300"></div>
+          <h2 className="relative text-xl font-medium text-gray-900 group-hover:text-white z-10">MongoDB</h2>
+        </div>
+
+        <div className="group relative flex flex-col items-center justify-center p-6 border-2 border-gray-200 rounded-xl hover:scale-105 transition-all duration-300 ease-in-out">
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-indigo-600 opacity-0 group-hover:opacity-30 rounded-xl transition-opacity duration-300"></div>
+          <h2 className="relative text-xl font-medium text-gray-900 group-hover:text-white z-10">NextJS</h2>
+        </div>
+
+        <div className="group relative flex flex-col items-center justify-center p-6 border-2 border-gray-200 rounded-xl hover:scale-105 transition-all duration-300 ease-in-out">
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-indigo-600 opacity-0 group-hover:opacity-30 rounded-xl transition-opacity duration-300"></div>
+          <h2 className="relative text-xl font-medium text-gray-900 group-hover:text-white z-10">Linux</h2>
+        </div>
+
+        <div className="group relative flex flex-col items-center justify-center p-6 border-2 border-gray-200 rounded-xl hover:scale-105 transition-all duration-300 ease-in-out">
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-indigo-600 opacity-0 group-hover:opacity-30 rounded-xl transition-opacity duration-300"></div>
+          <h2 className="relative text-xl font-medium text-gray-900 group-hover:text-white z-10">NodeJS</h2>
+        </div>
+
+        <div className="group relative flex flex-col items-center justify-center p-6 border-2 border-gray-200 rounded-xl hover:scale-105 transition-all duration-300 ease-in-out">
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-indigo-600 opacity-0 group-hover:opacity-30 rounded-xl transition-opacity duration-300"></div>
+          <h2 className="relative text-xl font-medium text-gray-900 group-hover:text-white z-10">Express</h2>
+        </div>
+
+        <div className="group relative flex flex-col items-center justify-center p-6 border-2 border-gray-200 rounded-xl hover:scale-105 transition-all duration-300 ease-in-out">
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-indigo-600 opacity-0 group-hover:opacity-30 rounded-xl transition-opacity duration-300"></div>
+          <h2 className="relative text-xl font-medium text-gray-900 group-hover:text-white z-10">MySQL</h2>
+        </div>
+      </div>
+    </section>
+  );
+}
