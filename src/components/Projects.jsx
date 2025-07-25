@@ -42,6 +42,19 @@ function Projects() {
                 </p>
               </div>
             </div>
+            <div className="py-8 flex flex-wrap md:flex-nowrap">
+              <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                <span className="font-semibold title-font text-gray-700">Project 4</span>
+              </div>
+              <div className="md:flex-grow">
+                <h2 className="text-2xl font-medium text-gray-900 title-font mb-2">Hit The Bubble</h2>
+                <p className="leading-relaxed">
+                  Hit the Bubble is a fast-paced game where players pop bubbles quickly to score points and beat the timer.
+                  <br />
+                  <a  className='text-34px text-blue-700'  href= "https://hit-bubble.vercel.app" >Try It</a>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
